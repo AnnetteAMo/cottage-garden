@@ -1,8 +1,31 @@
 * {
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+
 }
 
 h1 {
     font-weight: bold; 
+    padding: 0 30px;
+    border: 5px;
 }
 
+figure {
+    padding: 0 10px;
+    border: 5px;
+}
+
+p {
+    width: 500px;
+    padding: 0 30px;
+    border: 5px;
+}
+
+figcaption {
+    padding: 5px 0;
+}
+
+i {
+    padding: 5px;
+    display: inline-block;
+}
