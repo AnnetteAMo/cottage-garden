@@ -31,3 +31,64 @@ i {
     padding: 5px;
     display: inline-block;
 }
+
+ul {
+    background-image: url(yellow_rose.jpg); /* Why isn't this visible?*/
+    background: #fcecfc; /* Old browsers */
+    background: -webkit-linear-gradient(#fcecfc 0%, #fd89d7 20%, #fd89d7 20%, #fba6e1 76%, #ff7cd8 100%);
+    background: -moz-linear-gradient(#fcecfc 0%, #fd89d7 20%, #fd89d7 20%, #fba6e1 76%, #ff7cd8 100%);
+    background: -o-linear-gradient(#fcecfc 0%, #fd89d7 20%, #fd89d7 20%, #fba6e1 76%, #ff7cd8 100%);
+    background: linear-gradient(#fcecfc 0%, #fd89d7 20%, #fd89d7 20%, #fba6e1 76%, #ff7cd8 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */ 
+   
+    height: 200px;
+    width: 500px;
+}
+
+#circle {
+    background: #f00;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid pink;
+}
+
+
+
+#curvedarrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-right: 18px solid red;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+#curvedarrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 6px solid red;
+  border-radius: 40px 0 0 0;
+  top: -24px;
+  left: -18px;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+p:first-of-type {
+    background: grey;
+}
